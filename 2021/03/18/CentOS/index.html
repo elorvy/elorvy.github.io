@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    CentOS | 泡茶
+  </title>
+  <meta name="description" content="">
+  
+  <meta name="keywords" content="
+  
+  ">
+  
+  <meta name="author" content="Hua">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="theme-color" content="#1e2327">
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+
+  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+  <link rel="stylesheet" href="/project/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/project/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1">This website</label>
+          <div id="google-search">
+            <gcse:search></gcse:search>
+          </div>
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/project/">Archives</a></li>
+        
+        
+        <li><a href="/project/">Categories</a></li>
+        
+        
+        <li><a href="/project/">Tags</a></li>
+        
+        
+        <li class="desktop-only"><a href="/project/atom.xml" target="_blank">RSS</a></li>
+        
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="https://octodex.github.com/images/baracktocat.jpg"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/project/" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/project/"
+           class="header-toolbar-right"> 13 </a>
+      </li>
+      <li>
+        <a href="/project/" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/project/"
+           class="header-toolbar-right"> 2 </a>
+      </li>
+      <li>
+        <a href="/project/" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/project/"
+           class="header-toolbar-right"> 2 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/project/">泡茶</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    Hua
+
+    <span class="post-date float-right" title="{{moment(1616062698000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      
+          <i class="fa fa-pencil-square-o"></i>
+      
+      {{moment(1616062698000).fromNow()}}
+    </span>
+  </h3>
+
+  <article class="post-content">
+    <h1>CentOS</h1>
+    <h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><blockquote>
+<p>由于近期编程需要，在阿里云购买了一台（ecs.s6-c1m2.small）<del>配置极差</del>，这篇文章主要是记录了我安装环境是的步骤以及遇到的问题。</p>
+</blockquote>
+<h1 id="NodeJs"><a href="#NodeJs" class="headerlink" title="NodeJs"></a>NodeJs</h1><blockquote>
+<p>node是最先进行安装的。参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/u014229652/article/details/83746320">网上资料</a>【不确定原作者是不是他，感谢分享】</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash"></span></span><br><span class="line"><span class="language-bash"><span class="built_in">cd</span> /home/download</span></span><br><span class="line">wget https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-x64.tar.xz</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">出现Unable to establish SSL connection.</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">网上查了一下说是没有安装这些，就安装了一下。</span></span><br><span class="line">yum install libtool automake autoconf gcc-c++ openssl-devel</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">再次进行安装</span></span><br><span class="line">wget https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-x64.tar.xz</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">又出现了Unable to establish SSL connection.</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">又去网上查了一下说是没有更新wget，就去更新了下。</span></span><br><span class="line">yum update wget</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">再次进行安装</span></span><br><span class="line">wget https://nodejs.org/dist/v10.13.0/node-v10.13.0-linux-x64.tar.xz</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">成功下载</span></span><br><span class="line">ls</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">node-v10.13.0-linux-x64.tar.xz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解压文件</span></span><br><span class="line">tar -xvf node-v10.13.0-linux-x64.tar.xz</span><br><span class="line">ls</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">node-v10.13.0-linux-x64  node-v10.13.0-linux-x64.tar.xz</span></span><br><span class="line">mv node-v10.13.0-linux-x64  /usr/local/</span><br><span class="line">cd /usr/local/</span><br><span class="line">ls</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">aegis  bin  etc  games  include  lib  lib64  libexec  node-v10.13.0-linux-x64  sbin  share  src</span></span><br><span class="line">vim /etc/profile</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">加在文件开头，按 i 进入编写。</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">export</span> NODE_HOME=/usr/local/node-v10.13.0-linux-x64</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$NODE_HOME</span>/bin</span>  </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">export</span> NODE_PATH=<span class="variable">$NODE_HOME</span>/lib/node_modules</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">编写完成后，按 esc 后输入 ‘:wq<span class="string">&#x27; 保存退出。</span></span></span><br><span class="line">source /etc/profile   #使配置文件生效</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="string">测试安装情况</span></span></span><br><span class="line">node -v</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="string">出现版本信息则安装完成。</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="补充-更新办法"><a href="#补充-更新办法" class="headerlink" title="补充-更新办法"></a>补充-更新办法</h2><p><code>上面下载的10.13.0版本的我下的版本低了。下面的更新办法。</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g n   # n 模块是node 是node专门升级用的</span><br><span class="line">1. n stable         #升级到最新稳定版本 </span><br><span class="line">2. n v12.16.1        #升级到指定版本</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Screen"><a href="#Screen" class="headerlink" title="Screen"></a>Screen</h1><blockquote>
+<p><strong>Screen</strong>是一款由GNU计划开发的用于命令行终端切换的自由软件。我的主要目的是用来启动项目服务的。</p>
+<p><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/5225f26bb16009e6fa090891.html">安装教程参考</a></p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum install screen</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Complete!</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">没有出现问题，以前我安装的时候是有问题的。也可能是我安装node的时候已经整好安装环境了。</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装完成，测试一下。</span></span><br><span class="line">screen -ls</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">No Sockets found <span class="keyword">in</span> /var/run/screen/S-root. 正确安装。</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><blockquote>
+<p>screen有很多指令，但是我主要就用一两个命令而已。</p>
+<p>详细命令可到 <a target="_blank" rel="noopener" href="http://www.gnu.org/software/screen/">官网(<del>没有看到教程。。。</del>)</a> 或者 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_28832135/article/details/79831700">参考博客</a></p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">新建一个叫yourname的session</span></span><br><span class="line">screen -S yourname</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">在这个窗口进行任务安排。</span></span><br><span class="line">Ctrl-a d # detach，命令将该session丢到后台进行处理。</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">恢复会话，恢复detached的会话</span></span><br><span class="line">screen -r yourname </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">如果出现 There is no screen to be resumed matching yourname.</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">就是该会话为 attached 状态。</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">可使用</span> </span><br><span class="line">screen -d yourname # 后会变成 detached 状态</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">再使用</span></span><br><span class="line">screen -r yourname </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">强制关闭</span></span><br><span class="line">Ctrl-a k</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">清除 dead 状态的会话</span></span><br><span class="line">screen -wipe</span><br></pre></td></tr></table></figure>
+
+<h1 id="lrzsz"><a href="#lrzsz" class="headerlink" title="lrzsz"></a>lrzsz</h1><blockquote>
+<p>文件传输</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装</span></span><br><span class="line">yum -y install lrzsz # 参数-y中&quot;y&quot;的意思是：当安装过程提示选择全部为&quot;yes&quot;</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Complete!</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="服务器接收文件"><a href="#服务器接收文件" class="headerlink" title="服务器接收文件"></a>服务器接收文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">输入rz时、意为服务器接收文件，既将文件从本地上传到服务器。</span></span><br><span class="line">rz #回车</span><br></pre></td></tr></table></figure>
+
+<h2 id="本地下载文件"><a href="#本地下载文件" class="headerlink" title="本地下载文件"></a>本地下载文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">输入sz时、意为服务器要发送文件，既从服务器发送文件到本地，或是说本地从服务器上下载文件。</span></span><br><span class="line">sz filename1 filename2</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下载<span class="built_in">dir</span>目录下的所有文件，不包含<span class="built_in">dir</span>下的文件夹</span></span><br><span class="line">sz dir/*</span><br></pre></td></tr></table></figure>
+
+<h1 id="Linux文件解-压包"><a href="#Linux文件解-压包" class="headerlink" title="Linux文件解/压包"></a>Linux文件解/压包</h1><h2 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line">tar zxvf filename.tar</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br><span class="line">tar czvf filename.tar dirname</span><br></pre></td></tr></table></figure>
+
+<h2 id="gz"><a href="#gz" class="headerlink" title="gz"></a>gz</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="tar-1"><a href="#tar-1" class="headerlink" title="tar"></a>tar</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line">gunzip filename.gz # 方法1</span><br><span class="line">gzip -d filename.gz #方法2</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br><span class="line">gzip filename</span><br></pre></td></tr></table></figure>
+
+<h2 id="tar-gz-和-tgz"><a href="#tar-gz-和-tgz" class="headerlink" title=".tar.gz 和 .tgz"></a>.tar.gz 和 .tgz</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line">tar zxvf filename.tar.gz</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br><span class="line">tar zcvf filename.tar.gz dirname</span><br><span class="line">tar zcvf filename.tar.gz dirname1 dirname2 dirname3..... # 打包多个文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="zip"><a href="#zip" class="headerlink" title="zip"></a>zip</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line">unzip filename.zip</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br><span class="line">zip filename.zip dirname</span><br></pre></td></tr></table></figure>
+
+<h2 id="z"><a href="#z" class="headerlink" title="z"></a>z</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line">uncompress filename.z</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br><span class="line">compress filename</span><br></pre></td></tr></table></figure>
+
+<h2 id="tar-z"><a href="#tar-z" class="headerlink" title=".tar.z"></a>.tar.z</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line">tar zxvf filename.tar.z</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br><span class="line">tar zcvf filename.tar.z dirname</span><br></pre></td></tr></table></figure>
+
+<h2 id="xxx"><a href="#xxx" class="headerlink" title="xxx"></a>xxx</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">解包：</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">打包：</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1><blockquote>
+<p>mysql5.6</p>
+<p>安装借鉴 <a target="_blank" rel="noopener" href="https://blog.csdn.net/a1513049385/article/details/90054895">CSDN博客</a></p>
+</blockquote>
+<h2 id="检测是否自带安装-mysql"><a href="#检测是否自带安装-mysql" class="headerlink" title="检测是否自带安装 mysql"></a>检测是否自带安装 mysql</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum list installed | grep mysql</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">我的没有输出，应该是没有。</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="下载-rpm-文件"><a href="#下载-rpm-文件" class="headerlink" title="下载 rpm 文件"></a>下载 rpm 文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">进入保存文件目录。</span></span><br><span class="line">wget http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-mysql"><a href="#安装-mysql" class="headerlink" title="安装 mysql"></a>安装 mysql</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh mysql-community-release-el6-5.noarch.rpm</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装完成后，在/etc/yum.repos.d/ 这个目录下多出mysql-community-source.repo和mysql-community.repo</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="安装-mysql-服务器"><a href="#安装-mysql-服务器" class="headerlink" title="安装 mysql 服务器"></a>安装 mysql 服务器</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">（一路<span class="built_in">yes</span>）。</span></span><br><span class="line">yum install mysql-community-server</span><br></pre></td></tr></table></figure>
+
+<h2 id="启动-mysql-服务器"><a href="#启动-mysql-服务器" class="headerlink" title="启动 mysql 服务器"></a>启动 mysql 服务器</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld start</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置-用户名-密码"><a href="#设置-用户名-密码" class="headerlink" title="设置 用户名|密码"></a>设置 用户名|密码</h2><p><code>由于mysql刚刚安装完的时候，mysql的root用户的密码默认是空的，所以我们需要及时用mysql的root用户登录（第一次回车键，不用输入密码），并修改密码。</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p;</span><br><span class="line">use mysql;</span><br><span class="line">update user set password=PASSWORD(&quot;xxxx&quot;) where User=&#x27;root&#x27;;</span><br><span class="line">flush privileges; # 立即生效</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置-服务-自启动"><a href="#设置-服务-自启动" class="headerlink" title="设置 服务 自启动"></a>设置 服务 自启动</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chkconfig --list | grep mysqld</span><br><span class="line">chkconfig mysqld on</span><br></pre></td></tr></table></figure>
+
+<h2 id="设置-mysql-大小写不敏感"><a href="#设置-mysql-大小写不敏感" class="headerlink" title="设置 mysql 大小写不敏感"></a>设置 mysql 大小写不敏感</h2><p><code>在/etc/my.cnf 中的[mysqld]后添加添加</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">lower_case_table_names=1</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">lower_case_table_names参数详解：</span> </span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">lower_case_table_names = 0</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其中 0：区分大小写，1：不区分大小写</span></span><br></pre></td></tr></table></figure>
+
+<p><code>重启MYSQL服务，这时已设置成功：不区分表名的大小写；</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">重启MYSQL服务</span></span><br><span class="line">service mysqld restart</span><br></pre></td></tr></table></figure>
+
+<h2 id="MySQL语法"><a href="#MySQL语法" class="headerlink" title="MySQL语法"></a>MySQL语法</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/ming_xiaoxiami/article/details/81905388">基本用法</a></p>
+<h2 id="避坑"><a href="#避坑" class="headerlink" title="避坑"></a>避坑</h2><p><code>执行.sql文件</code></p>
+<p><strong>也注意不要在 mysql库(系统库)中执行非必要的任务。</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">先连接数据库</span></span><br><span class="line">mysql -u root -p</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">输入密码</span></span><br><span class="line">source /xxx/xxx/xxx.sql # 注意，路径不需要引号</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">有错误的话，检查是否 use database;</span></span><br></pre></td></tr></table></figure>
+
+
+  </article>
+</div>
+
+
+    
+
+
+
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <div class="clearfix">
+    <a href="http://elorvy.github.io/project" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li>© 2019 Hua</li>
+      <li><a href="http://elorvy.github.io/project">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a target="_blank" rel="noopener" href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
+      by <a target="_blank" rel="noopener" href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
+    </div>
+    </div>
+    
+  </footer>
+</div>
+
+
+
+
+<script src="/project/js/main.js"></script>
+
+</body>
+</html>
